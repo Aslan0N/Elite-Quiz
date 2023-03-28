@@ -1,0 +1,100 @@
+a {
+  text-decoration: none !important;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+.my-li {
+  background-image: linear-gradient(93deg, #ef5488, #6c245a) !important;
+}
+
+.hv-li:hover i {
+  display: inline-block !important;
+}
+
+.text-special {
+  color: #ef5488;
+}
+
+.my-div a {
+  padding: 6px 9px;
+  background-color: #ef5488;
+  color: #fff;
+  border-radius: 5px;
+}
+.my-div a:nth-child(2) {
+  background-color: #000;
+  position: relative;
+}
+.my-div a:nth-child(2)::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ef5488;
+  border-radius: 5px;
+  transition: all 600ms;
+}
+.my-div a:nth-child(2):hover::after {
+  width: 100%;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.animation-img {
+  animation-name: upImg;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes upImg {
+  0% {
+    transform: translateY(-30px);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+footer {
+  height: 75vh;
+}
+
+.i-con {
+  margin-top: 5px;
+}
+.i-con i {
+  color: #fff;
+  border: 1px dashed #fff;
+  padding: 6px 5px 5px 5px;
+  border-radius: 50%;
+  transition: all 600ms;
+}
+.i-con i:hover {
+  border: 1px solid #ef5488;
+  color: #ef5488;
+  padding: 5px;
+}
+
+.hv-a {
+  transition: 500ms;
+}
+.hv-a:hover {
+  color: #ef5488 !important;
+}/*# sourceMappingURL=style.css.map */
